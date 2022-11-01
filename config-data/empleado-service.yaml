@@ -2,17 +2,9 @@ server:
   port: 8083
 spring:
   datasource:
-    url: "jdbc:mysql://localhost:3306/MSTGO_Empleados"
-    username: "root"
-    password: "password&1234"
-    testOnBorrow: true
-    testWhileIdle: true
-    timeBetweenEvictionRunsMillis: 60000
-    minEvictableIdleTimeMillis: 30000
-    validationQuery: SELECT 1
-    max-active: 15
-    max-idle: 10
-    max-wait: 8000
+    url: jdbc:mysql://localhost:3306/MSTGO_Empleados
+    username: root
+    password: password&1234
   jpa:
     hibernate:
       ddl-auto: update
