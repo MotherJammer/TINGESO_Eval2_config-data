@@ -16,3 +16,7 @@ spring:
           uri: http://localhost:8084
           predicates:
             - Path=/autorizacion/**
+        - id: justificativo-service
+          uri: http://localhost:8085
+          predicates:
+            - Path=/justificativo/**

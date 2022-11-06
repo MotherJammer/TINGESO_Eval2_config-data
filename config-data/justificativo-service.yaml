@@ -1,0 +1,10 @@
+server:
+  port: 8085
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/MSTGO_Justificativos
+    username: root
+    password: password&1234
+  jpa:
+    hibernate:
+      ddl-auto: update
