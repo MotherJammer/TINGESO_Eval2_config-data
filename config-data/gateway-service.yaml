@@ -12,3 +12,7 @@ spring:
           uri: http://localhost:8086
           predicates:
             - Path=/marcaje/**
+        - id: autorizacion-service
+          uri: http://localhost:8084
+          predicates:
+            - Path=/autorizacion/**
