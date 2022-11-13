@@ -11,6 +11,7 @@ spring:
             allowedMethods:
               - GET
               - POST
+              - DELETE
       routes:
         - id: empleado-service
           uri: http://localhost:8083
