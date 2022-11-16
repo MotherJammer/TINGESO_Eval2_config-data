@@ -13,3 +13,9 @@ management:
     web:
       exposure:
         include: "*"
+keycloak:
+  realm: Mueblestgo-realm
+  auth-server-url: http://0.0.0.0:8080
+  resource: springboot-keycloak
+  public-client: true
+  bearer-only: true
