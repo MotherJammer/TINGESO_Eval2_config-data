@@ -21,4 +21,3 @@ keycloak:
   resource: springboot-keycloak
   public-client: true
   bearer-only: true
-  use-resource-role-mappings: true
