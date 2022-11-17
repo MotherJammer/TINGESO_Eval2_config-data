@@ -6,7 +6,7 @@ spring:
       globalcors:
         corsConfigurations:
           "[/**]":
-            allowedOrigins: "*"
+            allowedOrigins: "http://localhost:3001"
             allowedHeaders: "*"
             allowedMethods:
               - GET
@@ -33,21 +33,3 @@ spring:
           uri: http://localhost:8087
           predicates:
             - Path=/sueldos/**
-  security:
-    oauth2:
-      client:
-        provider:
-          my-keycloak-provider:
-            issuer-uri: http://localhost:8080/realms/Mueblestgo
-        registration:
-          keycloak-spring-gateway-client:
-            provider: my-keycloak-provider
-            client-id: spring-gateway-client
-            client-secret: DzsR3U05rus2ujb52TOGyUOmKdE74EW3
-            authorization-grant-type: authorization_code
-            redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
