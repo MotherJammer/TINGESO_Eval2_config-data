@@ -6,7 +6,7 @@ spring:
       globalcors:
         corsConfigurations:
           "[/**]":
-            allowedOrigins: "http://localhost:3001"
+            allowedOrigins: "*"
             allowedHeaders: "*"
             allowedMethods:
               - GET
@@ -14,22 +14,22 @@ spring:
               - DELETE
       routes:
         - id: empleado-service
-          uri: http://localhost:8083
+          uri: http://empleados-service:8083
           predicates:
             - Path=/empleado/**
         - id: marcaje-service
-          uri: http://localhost:8086
+          uri: http://marcajes-service:8086
           predicates:
             - Path=/marcaje/**
         - id: autorizacion-service
-          uri: http://localhost:8084
+          uri: http://autorizaciones-service:8084
           predicates:
             - Path=/autorizacion/**
         - id: justificativo-service
-          uri: http://localhost:8085
+          uri: http://justificativos-service:8085
           predicates:
             - Path=/justificativo/**
         - id: oficinaRRHH-service
-          uri: http://localhost:8087
+          uri: http://oficinarrhh-service:8087
           predicates:
             - Path=/sueldos/**
